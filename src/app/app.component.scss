@@ -1,0 +1,21 @@
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.header {
+  height: 50px;
+  width: 100%;
+  background-color: #cccccc40;
+
+  &__info {
+    text-align: center;
+    line-height: 50px;
+    font-size: 28px;
+    font-weight: bold;
+  }
+}
