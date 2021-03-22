@@ -1,13 +1,6 @@
-<div class="content">
+<app-header
+  [currentPath]="currentItemsList[0]?.parentId ? setCurrentPath() : 'root'"
+  (onSearch)="onSearch($event)" (onBack)="goBack($event)"
+></app-header>
 
-  <div class="header">
-    <div class="header__info">
-      Stop Watch
-    </div>
-  </div>
-
-  <div>
-    <app-stop-watch [start]="_start" [showTimerControls]="true"></app-stop-watch>
-  </div>
-
-</div>
+<app-files-board [itemsList]="currentItemsList" (onPathClick)="onItemCLick($event)"></app-files-board>
